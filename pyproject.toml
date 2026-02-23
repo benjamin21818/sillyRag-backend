@@ -1,0 +1,40 @@
+[project]
+name = "myrag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "sqlalchemy",
+    "asyncpg",
+    "python-dotenv",
+    "greenlet",
+    "fastapi",
+    "uvicorn",
+    "torch",
+    "transformers",
+    "sentence-transformers",
+    "langchain-huggingface",
+    "pgvector>=0.2.5,<0.4",
+    "psycopg[binary]>=3.3.3",
+    "jieba>=0.42.1",
+    "colorlog>=6.10.1",
+    "langchain-community>=0.4.1",
+    "python-multipart>=0.0.22",
+    "langchain-deepseek>=1.0.1",
+    "aiofiles>=25.1.0",
+    "sherpa-onnx>=1.12.25",
+    "onnxruntime>=1.24.2",
+    "edge-tts>=7.2.7",
+    "pytest>=8.0.0",
+    "langchain-postgres==0.0.17",
+    "pytest-asyncio>=0.23.0",
+    "httpx>=0.25.0",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
